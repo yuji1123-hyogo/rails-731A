@@ -1,0 +1,7 @@
+example_id                               | status  | run_time        |
+---------------------------------------- | ------- | --------------- |
+./spec/models/project_spec.rb[1:1]       | pending | 0 seconds       |
+./spec/models/task_spec.rb[1:1]          | pending | 0.00002 seconds |
+./spec/models/user_spec.rb[1:1]          | pending | 0 seconds       |
+./spec/requests/api/tasks_spec.rb[1:1:1] | pending | 0.00001 seconds |
+./spec/requests/hello_spec.rb[1:1:1]     | pending | 0.00001 seconds |

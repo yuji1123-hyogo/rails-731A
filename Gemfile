@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.3.8'
 
+gem 'active_model_serializers', '~> 0.10.0'
 gem 'bootsnap', require: false
 gem 'image_processing', '~> 1.2'
 gem 'importmap-rails'

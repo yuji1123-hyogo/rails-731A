@@ -1,0 +1,291 @@
+{
+  "RSpec": {
+    "coverage": {
+      "C:/Users/yuji1/programing/learning/rails/rails-731A/app/models/project.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "C:/Users/yuji1/programing/learning/rails/rails-731A/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "C:/Users/yuji1/programing/learning/rails/rails-731A/app/models/task.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "C:/Users/yuji1/programing/learning/rails/rails-731A/app/models/user.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "C:/Users/yuji1/programing/learning/rails/rails-731A/app/channels/application_cable/channel.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {}
+      },
+      "C:/Users/yuji1/programing/learning/rails/rails-731A/app/channels/application_cable/connection.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {}
+      },
+      "C:/Users/yuji1/programing/learning/rails/rails-731A/app/controllers/api/auth_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {}
+      },
+      "C:/Users/yuji1/programing/learning/rails/rails-731A/app/controllers/api/projects_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {}
+      },
+      "C:/Users/yuji1/programing/learning/rails/rails-731A/app/controllers/api/tasks_controller.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {}
+      },
+      "C:/Users/yuji1/programing/learning/rails/rails-731A/app/controllers/application_controller.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {}
+      },
+      "C:/Users/yuji1/programing/learning/rails/rails-731A/app/controllers/concerns/json_web_token.rb": {
+        "lines": [
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {}
+      },
+      "C:/Users/yuji1/programing/learning/rails/rails-731A/app/controllers/hello_controller.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {}
+      },
+      "C:/Users/yuji1/programing/learning/rails/rails-731A/app/helpers/application_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {}
+      },
+      "C:/Users/yuji1/programing/learning/rails/rails-731A/app/jobs/application_job.rb": {
+        "lines": [
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0
+        ],
+        "branches": {}
+      },
+      "C:/Users/yuji1/programing/learning/rails/rails-731A/app/services/jwt_service.rb": {
+        "lines": [
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {}
+      }
+    },
+    "timestamp": 1754928148
+  }
+}

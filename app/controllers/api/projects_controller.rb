@@ -15,7 +15,7 @@ class Api::ProjectsController < ApplicationController
 
   # プロジェクト作成
   def create
-    project = current_user.projects.build(project_params)
+    project = @current_user.projects.build(project_params)
 
     if project.save
       render json: project, status: :created
