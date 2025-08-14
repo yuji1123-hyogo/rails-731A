@@ -1,7 +1,8 @@
 class TaskSearchService
   def initialize(user, search_params = {})
     @user = user
-    @search_params = search_params.with_indifferent_access
+    @search_params = search_params.to_h
+    @search_params = ActiveSupport::HashWithIndifferentAccess.new(@search_params)
   end
 
   # ユーザーと検索条件を受け取ってタスクを返す
@@ -10,7 +11,7 @@ class TaskSearchService
     return { tasks: [], total_count: 0 } unless @user
 
     tasks = base_scope
-    tasks = apply_filter(tasks)
+    tasks = apply_filters(tasks)
     tasks = apply_sorting(tasks)
     {
       tasks: tasks,

@@ -1,6 +1,6 @@
 class Api::TasksController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_task, only[:show, :update, :destroy]
+  before_action :set_task, only: %i[show update destroy]
 
   def index
     result = TaskSearchService.new(current_user, search_params).call
@@ -87,7 +87,7 @@ class Api::TasksController < ApplicationController
   def task_json(task)
     {
       id: task.id,
-      title: task.title,
+      name: task.name,
       description: task.description,
       status: task.status,
       due_date: task.due_date,

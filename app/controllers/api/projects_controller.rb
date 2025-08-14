@@ -15,7 +15,8 @@ class Api::ProjectsController < ApplicationController
 
   # プロジェクト作成
   def create
-    project = @current_user.projects.build(project_params)
+    puts "☑ Project#create current_user#{current_user}"
+    project = current_user.projects.build(project_params)
 
     if project.save
       render json: project, status: :created
@@ -45,12 +46,20 @@ class Api::ProjectsController < ApplicationController
 
   # JWT認証チェック
   def authenticate_user!
+    puts '📡authenticate_user!実行開始'
     header = request.headers['Authorization']
+
+    puts "☑authenticate_user Authorization ヘッダー#{header}"
     header = header.split(' ').last if header
 
     decoded = JwtService.decode(header)
+
+    puts "☑authenticate_user デコード結果#{decoded || 'デコード結果が取得できませんでした'}"
     @current_user = User.find(decoded[:user_id]) if decoded
+
+    puts "☑authenticate_user current_user#{@current_user}"
   rescue ActiveRecord::RecordNotFound
+    puts '🙅authenticate_user current_userガス得できませんでした'
     render json: { error: '認証が必要です' }, status: :unauthorized
   end
 

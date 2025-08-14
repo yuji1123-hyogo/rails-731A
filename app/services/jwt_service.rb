@@ -7,6 +7,8 @@ class JwtService
   end
 
   def self.decode(token)
+    puts '☑JwtService decode 実行開始'
+    puts "☑JwtService SECRET_KEY #{SECRET_KEY}"
     decoded = JWT.decode(token, SECRET_KEY)[0]
     ActiveSupport::HashWithIndifferentAccess.new(decoded)
   rescue JWT::DecodeError => e
