@@ -1,9 +1,18 @@
+# spec/factories/tasks.rb
 FactoryBot.define do
   factory :task do
-    name { "MyString" }
-    description { "MyText" }
-    status { 1 }
-    due_date { "2025-08-12 00:54:18" }
-    project { nil }
+    name { Faker::Lorem.sentence(word_count: 3) }
+    description { Faker::Lorem.paragraph }
+    status { :pending }
+    due_date { 1.week.from_now }
+    association :project
+
+    trait :completed do
+      status { :completed }
+    end
+
+    trait :overdue do
+      due_date { 1.week.ago }
+    end
   end
 end

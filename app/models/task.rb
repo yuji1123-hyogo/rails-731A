@@ -15,9 +15,9 @@ class Task < ApplicationRecord
   validates :due_date, presence: true
   validate :due_date_cannot_be_in_the_past
 
-  scope :active, -> { where.not(status: :completes) }
+  scope :active, -> { where.not(status: :completed) }
   scope :overdue, -> { where('due_date < ?', Date.current) }
-  scope :due_today, -> { where(due_date: date.current) }
+  scope :due_today, -> { where(due_date: Date.current) }
 
   private
 

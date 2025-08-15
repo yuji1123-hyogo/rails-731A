@@ -47,13 +47,13 @@ class TaskSearchService
   def filter_by_status(tasks)
     return tasks if @search_params[:status].blank?
 
-    tasks.select { |task| task.status = @search_params[:status] }
+    tasks.select { |task| task.status == @search_params[:status] }
   end
 
   def filter_by_project(tasks)
     return tasks if @search_params[:project_id].blank?
 
-    tasks.select { |task| task.project_id = @search_params }
+    tasks.select { |task| task.project_id == @search_params }
   end
 
   def apply_sorting(tasks)
